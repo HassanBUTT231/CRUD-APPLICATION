@@ -38,7 +38,7 @@ function App() {
 
   return (
     <div>
-      <h2>Submit Info</h2>
+      <h2>Submit Data</h2>
       <form onSubmit={onSubmit}>
         <input
           type="text"
