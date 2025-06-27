@@ -17,8 +17,9 @@ phases:
     commands:
       - echo Build completed on `date`
       - docker push 099199746132.dkr.ecr.us-east-1.amazonaws.com/backend-app:latest
-      - printf '[{"name":"node-backend","imageUri":"099199746132.dkr.ecr.us-east-1.amazonaws.com/backend-app:latest"}]' > imagedefinitions.json
+      - mkdir -p backend
+      - printf '[{"name":"node-backend","imageUri":"099199746132.dkr.ecr.us-east-1.amazonaws.com/backend-app:latest"}]' > backend/imagedefinitions.json
 
 artifacts:
   files:
-    - imagedefinitions.json
+    - backend/imagedefinitions.json
