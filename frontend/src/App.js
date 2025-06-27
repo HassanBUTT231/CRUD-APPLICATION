@@ -38,11 +38,11 @@ function App() {
 
   return (
     <div>
-      <h2>Submit Data</h2>
+      <h2>Submit Data in the form </h2>
       <form onSubmit={onSubmit}>
         <input
           type="text"
-          placeholder="Name"
+          placeholder="Type your Name"
           value={name}
           onChange={(e) => setName(e.target.value)}
         /><br />
