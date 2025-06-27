@@ -1,4 +1,5 @@
-FROM node:17-alpine AS builder
+//FROM node:17-alpine AS builder
+FROM public.ecr.aws/docker/library/node:17-alpine AS builder
 WORKDIR /app
 COPY package*.json ./
 RUN npm install
