@@ -20,9 +20,8 @@ phases:
       - echo Build completed on `date`
       - echo Pushing the Docker image...
       - docker push 099199746132.dkr.ecr.us-east-1.amazonaws.com/react-app:latest
-      - mkdir -p frontend
-      -  printf '[{"name":"reactapp","imageUri":"%s"}]' "099199746132.dkr.ecr.us-east-1.amazonaws.com/$react-app:latest" > frontend/imagedefinitions.json
+      -  printf '[{"name":"reactapp","imageUri":"%s"}]' "099199746132.dkr.ecr.us-east-1.amazonaws.com/$react-app:latest" > imagedefinitions.json
  
 artifacts:
   files:
-    - frontend/imagedefinitions.json
+    - imagedefinitions.json
