@@ -9,8 +9,9 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - docker build -t backend-app:latest .
+      - docker build -t backend-app:latest ./backend
       - docker tag backend-app:latest 099199746132.dkr.ecr.us-east-1.amazonaws.com/backend-app:latest
+
 
   post_build:
     commands:
